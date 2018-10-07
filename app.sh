@@ -18,10 +18,10 @@ popd
 
 ### NANO ###
 _build_nano() {
-local VERSION="2.4.2"
+local VERSION="3.1"
 local FOLDER="nano-${VERSION}"
 local FILE="${FOLDER}.tar.gz"
-local URL="http://www.nano-editor.org/dist/v2.4/${FILE}"
+local URL="http://ftp.gnu.org/gnu/nano/${FILE}"
 
 _download_tgz "${FILE}" "${URL}" "${FOLDER}"
 pushd "target/${FOLDER}"
