@@ -1,6 +1,6 @@
 ### NCURSES ###
 _build_ncurses() {
-local VERSION="5.9"
+local VERSION="6.4"
 local FOLDER="ncurses-${VERSION}"
 local FILE="${FOLDER}.tar.gz"
 local URL="http://ftp.gnu.org/gnu/ncurses/${FILE}"
@@ -18,7 +18,7 @@ popd
 
 ### NANO ###
 _build_nano() {
-local VERSION="3.1"
+local VERSION="7.2"
 local FOLDER="nano-${VERSION}"
 local FILE="${FOLDER}.tar.gz"
 local URL="http://ftp.gnu.org/gnu/nano/${FILE}"
