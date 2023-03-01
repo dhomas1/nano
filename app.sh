@@ -18,7 +18,7 @@ popd
 
 ### NANO ###
 _build_nano() {
-local VERSION="7.2"
+local VERSION="7.1"
 local FOLDER="nano-${VERSION}"
 local FILE="${FOLDER}.tar.gz"
 local URL="http://ftp.gnu.org/gnu/nano/${FILE}"
