@@ -7,7 +7,7 @@
 
 framework_version="2.1"
 name="nano"
-version="2.4.2"
+version="7.2"
 description="Text editor for text-mode consoles"
 depends=""
 webui=""
