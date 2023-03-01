@@ -18,7 +18,7 @@ popd
 
 ### NANO ###
 _build_nano() {
-local VERSION="7.1"
+local VERSION="7.2"
 local FOLDER="nano-${VERSION}"
 local FILE="${FOLDER}.tar.gz"
 local URL="http://ftp.gnu.org/gnu/nano/${FILE}"
@@ -27,7 +27,7 @@ _download_tgz "${FILE}" "${URL}" "${FOLDER}"
 pushd "target/${FOLDER}"
 PKG_CONFIG_PATH="${DEST}/lib/pkgconfig" \
   ./configure --host="${HOST}" --prefix="${DEST}" --mandir="${DEST}/man" \
-  --enable-utf8 ac_cv_prog_ac_ct_NCURSESW_CONFIG="${DEPS}/bin/ncursesw5-config"
+  --enable-utf8 ac_cv_prog_ac_ct_NCURSESW_CONFIG="${DEPS}/bin/ncursesw6-config"
 make
 make install
 mkdir -p "${DEST}/etc"
