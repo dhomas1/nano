@@ -31,7 +31,7 @@ PKG_CONFIG_PATH="${DEST}/lib/pkgconfig" \
 make
 make install
 mkdir -p "${DEST}/etc"
-cp -vf doc/nanorc.sample "${DEST}/etc/nanorc.default"
+# cp -vf doc/nanorc.sample "${DEST}/etc/nanorc.default"
 for f in ${DEST}/share/nano/*.nanorc; do
   sed -e "s/\\\\>/\\\\b/g" -e "s/\\\\</\\\\b/g" -i "${f}"
   echo "include \"${f}\"" >> "${DEST}/etc/nanorc.default"
